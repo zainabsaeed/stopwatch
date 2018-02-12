@@ -1,0 +1,27 @@
+.container{
+    border: 1px solid black;
+    text-align: center;
+  }
+  h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+  }
+  h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif;
+    text-align: right;
+    padding-right: 10px;
+  }
+  #output{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 10px;
+    margin: 30px;
+    font-size: 300%;
+    padding: 2%;
+  }
+  button{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
