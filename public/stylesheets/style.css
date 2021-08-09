@@ -71,11 +71,15 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 0px;
   z-index: 9998;
 }
-#navbarCollapse ul{
-  margin-left: 20%;
+#navbarCollapse{
   margin-top: -2%;
 }
+#navbarCollapse ul{
+  margin-left: 20%;
+  /*margin-top: -2%;*/
+}
 #navbarCollapse ul li a{
+  font-family: "AktivGroteskW01", sans-serif;
   color: #000000;
 }
 #navbarCollapse ul li a:hover{
@@ -85,41 +89,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #07439B;
   text-decoration: underline;
 }
-#navbarCollapse ul li a:active{
+nav-link:target{
   color: #07439B;
   text-decoration: underline;
-}
-.navbar-collapse.collapse.show{
-  background-color: #07439B; !important;
-  color:#ffffff; !important;
-  padding: 5%;
-  margin-top: -2%;
-}
-.navbar-collapse.collapse.show ul li a{
-  font-family: "AktivGroteskW01-Bold", sans-serif;
-}
-.navbar-collapse.collapse.show ul li a:hover{
-  color:#ffffff;!important;
-}
-.navbar-collapse.collapse.show ul li a:active{
-  color:#ffffff;!important;
-}
-.navbar-collapse.collapse.show ul li a:focus{
-  color:#ffffff;!important;
 }
 .contact-btn-nav{
   background-color: #07439B;
   color: white;
   border-radius: 5px;
-  margin-top: -20%;
-}
-@media (max-width: 768px) {
-  .contact-btn-nav{
-    background-color: #ffffff;
-    color: black;
-    margin-top: 0;
-    margin-left: 20%;
-  }
 }
 .contact-btn-nav:hover{
   background-color: #D9D9D9;
@@ -127,6 +104,33 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #07439B;
   border-radius: 5px;
 }
+@media (max-width: 768px) {
+  .navbar-collapse{
+    background-color: #07439B; !important;
+    color:#ffffff; !important;
+    padding: 2%;
+    margin-top: -2%;
+  }
+  #navbarCollapse ul li a{
+    color: #ffffff;
+  }
+  #navbarCollapse ul li a:hover{
+    color: #ffffff;
+  }
+  .contact-btn-nav{
+    position: static;
+    background-color: #ffffff;
+    color: black;
+    margin-left: 20%;
+  }
+  .contact-btn-nav:hover{
+    background-color: #D9D9D9;
+    color: #07439B;
+    border: 1px solid #07439B;
+    border-radius: 5px;
+  }
+}
+
 /*--------------------------------------------------------------
 # jambotron
 --------------------------------------------------------------*/
@@ -358,7 +362,7 @@ section {
 }
 
 #services .btn-get-services{
-  font-family: "Montserrat", sans-serif;
+  font-family: "AktivGroteskW01", sans-serif;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -380,11 +384,49 @@ section {
   border-color: #07439B;
   color: #000000;
 }
+
+/*--------------------------------------------------------------
+  # Services-details
+--------------------------------------------------------------*/
+#service-details h1{
+  padding-top:5%;
+  font-family: AktivGroteskW01-Bold;
+  font-size: 36px;
+}
+#service-details p{
+  font-family: AktivGroteskW01-Regular;
+}
+.service-detail-row{
+  margin-top:7%;
+  margin-bottom:10%;
+}
 /*--------------------------------------------------------------
   # Case Studies
   --------------------------------------------------------------*/
 #case-studies {
   margin-top:8%;
+}
+#case-studies .btn-get-services{
+  font-family: "AktivGroteskW01", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.5s;
+  margin: 0 20px 20px 0;
+  color: #fff;
+  text-decoration: none;
+}
+#case-studies .btn-get-services {
+  border: 1px solid #ffffff;
+  color: #fff;
+}
+#case-studies .btn-get-services:hover {
+  background: #D9D9D9;
+  border:1px solid #D9D9D9;
+  color: #000000;
 }
 /*carousal of case studies*/
 
@@ -491,6 +533,352 @@ section {
   }
 }
 /*--------------------------------------------------------------
+ # casestudy details
+ --------------------------------------------------------------*/
+#casestudy-details h1{
+  padding-top:5%;
+  font-family: AktivGroteskW01-Bold, sans-serif;
+  font-size: 36px;
+}
+#casestudy-details p{
+  font-family: AktivGroteskW01, sans-serif;
+}
+.case-study-detail-row{
+  margin-top:7%;
+  margin-bottom:10%;
+}
+.case-study-detail-row img{
+  width:92%;
+  border:1px solid #000000;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.20);
+}
+.case-study-para{
+  background: #ffffff;
+  width:92%;
+  padding: 5%;
+}
+.case-study-para h3{
+  font-family: AktivGroteskW01-Bold;
+}
+@media (max-width: 768px) {
+  .case-study-detail-row img{
+    width:100%;
+  }
+  .case-study-para{
+    width:100%;
+    margin-bottom: 10%;
+  }
+}
+/*--------------------------------------------------------------
+ # demos details
+ --------------------------------------------------------------*/
+#demos-details h1{
+  padding-top:5%;
+  font-family: AktivGroteskW01-Bold, sans-serif;
+  font-size: 36px;
+}
+#demos-details p{
+  font-family: AktivGroteskW01, sans-serif;
+}
+.demos-detail-row{
+  margin-top:7%;
+  margin-bottom:10%;
+}
+.demos-detail-row img{
+  width:300px;
+  border:1px solid #000000;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.20);
+}
+.demos-para{
+  width: 80%;
+  padding: 4%;
+  text-align: center;
+}
+.demos-para h3{
+  font-family: AktivGroteskW01-Bold;
+}
+@media (max-width: 768px) {
+  .demos-detail-row img{
+    width:100%;
+  }
+  .demos-para{
+    width:100%;
+    margin-bottom: 10%;
+  }
+}
+
+/*--------------------------------------------------------------
+ # innovations & labs  details
+ --------------------------------------------------------------*/
+#innovation-labs-details h1{
+  padding-top:5%;
+  font-family: AktivGroteskW01-Bold, sans-serif;
+  font-size: 36px;
+  margin-left:3%;
+}
+#innovation-labs-details img{
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.20);
+}
+.innovation-labs-para h3{
+  font-family: AktivGroteskW01-Bold, sans-serif;
+  padding-top:10%;
+}
+.flexbox-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  width: calc(50% - 10px);
+  margin: 5px;
+  font-family: sans-serif;
+  color: #000000;
+  text-align: center;
+  font-size: 1em;
+  padding-top:5%;
+}
+
+.flex-item:nth-child(1) {
+  order: 1;
+}
+
+.flex-item:nth-child(2) {
+  order: 2;
+}
+
+.flex-item:nth-child(3) {
+  order: 4;
+}
+
+.flex-item:nth-child(4) {
+  order: 3;
+}
+
+@media only screen and (max-width: 768px) {
+  #innovation-labs-details h1{
+    text-align: center;
+  }
+  .flexbox-container{
+    margin-left:5%;
+  }
+  #innovation-labs-details img{
+    width:100%;
+  }
+  .innovation-labs-para h3{
+    padding-top:unset;
+  }
+  .flex-item {
+    width: calc(100% - 30px);
+  }
+  .flex-item:nth-child(1) {
+    order: 1;
+  }
+  .flex-item:nth-child(2) {
+    order: 2;
+  }
+  .flex-item:nth-child(3) {
+    order: 3;
+  }
+  .flex-item:nth-child(4) {
+    order: 4;
+  }
+}
+
+/*--------------------------------------------------------------
+ # clients details
+ --------------------------------------------------------------*/
+#clients-details {
+  padding-top:5%;
+}
+#clients-details p{
+  font-family: AktivGroteskW01, sans-serif;
+}
+
+.clients-details-row h1{
+  font-size: 36px;
+  font-family: AktivGroteskW01-Bold, sans-serif;
+  padding-top:5%;
+}
+.clients-details-row h5{
+  font-family: AktivGroteskW01-Bold, sans-serif;
+}
+.clients-row{
+  background-color: #07439B;
+  margin-bottom:5%;
+}
+.clients-row img{
+  margin-top:15%;
+  margin-bottom:15%;
+  background-color: #ffffff;
+  height:150px;
+  width:150px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.20);
+}
+@media (max-width: 768px) {
+  .clients-row img{
+    margin-top:5%;
+    margin-left:30%;
+    margin-bottom:5%;
+    background-color: #D9D9D9;
+    height:150px;
+    width:150px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.20);
+  }
+}
+
+/*--------------------------------------------------------------
+ # team details
+ --------------------------------------------------------------*/
+#team-details h1{
+  padding-top:5%;
+  font-family: AktivGroteskW01-Bold, sans-serif;
+  font-size: 36px;
+}
+#team-details h2{
+  font-family: AktivGroteskW01-Bold, sans-serif;
+}
+#team-details p{
+  font-family: AktivGroteskW01, sans-serif;
+}
+.team-details-row{
+  margin-top:7%;
+  margin-bottom:10%;
+}
+.team-details-row img{
+  width:92%;
+  border:1px solid #000000;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.20);
+}
+.team-para{
+  background: #ffffff;
+  width:92%;
+  padding: 5%;
+}
+.team-para h3{
+  font-family: AktivGroteskW01-Bold;
+}
+@media (max-width: 768px) {
+  .team-details-row img{
+    width:100%;
+  }
+  .team-para{
+    width:100%;
+    margin-bottom: 10%;
+  }
+}
+
+
+/*--------------------------------------------------------------
+ # blog
+ --------------------------------------------------------------*/
+#blog{
+  padding-top: 8%;
+}
+#blog h1{
+  text-align: center;
+}
+.blog-div{
+  margin: 3% auto;
+  width:50%;
+  height:200px;
+  border: 1px solid #000000;
+}
+.blog-div .item img{
+  height: 198px;
+  width:200px;
+  float: left;
+}
+.blog-content{
+  padding-top:5%;
+  text-align: center;
+}
+.header{
+  text-decoration: none;
+  font-family: "AktivGroteskW01-Bold", sans-serif;
+  font-size: 25px;
+}
+.blog-date{
+  color: #888888;
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 767px)  {
+  #blog{
+    padding-top: 20%;
+  }
+}
+i.icon{
+  color: white;
+  font-size:1em;
+}
+.extra .cta-btn{
+  padding: 2%;
+  border-radius: 5px; !important;
+  background-color: #07439B; !important;
+  color: white;
+}
+.extra .cta-btn:hover{
+  padding: 2%;
+  border: 1px solid #07439B;
+  border-radius: 5px; !important;
+  background-color: #D9D9D9; !important;
+  color: #07439B;
+}
+@media (max-width: 767px)  {
+  .blog-div{
+    margin: 3% auto;
+    width:100%;
+    height:unset;
+    border: 1px solid #000000;
+  }
+  .blog-div .item img{
+    height: 100%;
+    width:100%;
+    float: left;
+  }
+  .extra .cta-btn{
+    margin-bottom: 5%;
+  }
+}
+
+
+/*blog sample*/
+#blog-sample{
+  padding-top: 5%;
+}
+#blog-sample .container h1{
+  text-align: center;
+  font-family: "AktivGroteskW01-Bold", sans-serif;
+}
+#blog-sample .container .row{
+  width:100%;
+  height:50%;
+  margin:auto;
+}
+#blog-sample .container .row img{
+  width:100%;
+  height:300px;
+  margin: 3% auto;
+}
+.blog-date-detail{
+  text-align: right;
+  color: #888888;
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 767px)  {
+  #blog-sample{
+    padding-top: 5%;
+  }
+}
+
+/*--------------------------------------------------------------
  # contact
  --------------------------------------------------------------*/
 #contact {
@@ -534,6 +922,67 @@ section {
     margin-left:35%;
   }
 }
+
+
+/*--------------------------------------------------------------
+ # clients details
+ --------------------------------------------------------------*/
+#contact-details {
+  padding-top:5%;
+}
+#contact-details p{
+  font-family: AktivGroteskW01, sans-serif;
+}
+
+.contact-details-row h1{
+  font-size: 36px;
+  font-family: AktivGroteskW01-Bold, sans-serif;
+  padding-top:5%;
+}
+.contact-details-row h3{
+  font-family: AktivGroteskW01-Bold, sans-serif;
+}
+.contact-details-row a{
+  text-decoration: none;
+  color: #07439B;
+}
+.contact-details-row a:hover{
+  text-decoration: underline;
+  color: #07439B;
+}
+.contact-form-heading h5{
+  padding-top:4%;
+}
+.submit-btn{
+  font-family: "AktivGroteskW01", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 1% 5%;
+  border-radius: 10px;
+  transition: 0.5s;
+  color: #fff;
+  text-decoration: none;
+}
+.submit-btn {
+  background: #07439B;
+  border: 1px solid #07439B;
+  color: #ffffff;
+}
+.submit-btn:hover {
+  background: #D9D9D9;
+  border-color: #07439B;
+  color: #07439B;
+}
+.contact-form-heading form input, textarea, button{
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.10);
+}
+.map-row{
+  margin-bottom:5%;
+  margin-top: 5%;
+}
+
 
 /*--------------------------------------------------------------
 # footer
